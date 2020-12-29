@@ -19,7 +19,12 @@ With ConfirmedCases and Confirmed Deaths, I also fill with the previous values.
 I tried to check the feature importances with a Random Forest Regressor model. 
 First I did it with  France, and then I did it with all the countries. As I could predict, the most important feature was Confirmed Deaths. 
 
+### Feature Engineering
+I created new features that were the lineal combination of the categorical variables and their flag variable. For example, the variable C1_School_closing and the varibale C1_Flag. The first one is a categorical variable from 0 to 4 and the second one indicates if the measure was taken in the whole country or just in some areas. So I tried to give a weight depending on the flag. 
+
 ## Model
-I decided to perform an Ada Boost REgressor with the Scikit-learn implementation. 
+I decided to perform an Ada Boost Regressor with the Scikit-learn implementation. 
+I tried to do the model with the weights for the flags and categorical variable,s but it didn't worked. Teh results were worse. 
+
 
  
