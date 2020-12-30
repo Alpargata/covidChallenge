@@ -31,41 +31,40 @@ The model is trained with the data until 30 of September, and then it predicts f
 I tried to do the model with the weights for the flags and categorical variables, but the results were worse. 
 
 ## Learnings
-For me, this has been my fisrt participation in a challenge. It has been interesting and different to work in it, but I enojoyed it. I have learned how to work with a big group of people in the same project and how AdaBoost works. 
+For me, this has been my fisrt participation in a challenge. It has been interesting and different to work in it, and I have enojoyed it. I have learned how to work with a big group of people in the same project and how AdaBoost works. 
 
 ## Future work
-I would like to perform this same model with more variables and see if the results are different. 
-I think using a Neural Network could be also interesting, even though it may not work really well.
+I would like to try to include more variables and check if the results are different. Testing different machine learning models is important, but I think the big differences are made by data and feature engineering. 
 
 ## Graphs
 In the next image, we can observe the distribution of New cases depending on the type of School Closing policy that was applied in Spain.
 
 ![School Closing policy that was applied in Spain](Images/SpainNewCasesSchoolClosing.png)
 
-The policies were 0 for no measures, 1 for recommend closing, 2 for required closing in some levels and 3 for closing in all levels. 
-In the image, we can see that with no measures there were little cases taking place, this is because no measures was taken during the beggining of the year, when covid was not in Spain or there were not a lot of cases. 
-Then we can see that when closing schools, the number of new cases was reduced. 
+The policies are: 0 for no measures, 1 for recommend closing, 2 for required closing in some levels and 3 for closing in all levels. 
+In the image we can see that, with no measures, there were only a few cases. This is because no measures were taken during the beggining of the year, when covid-19 was not yet present in the country or there were not a lot of known cases. 
+We can also see that, after closing schools, the number of new cases were reduced. 
 
 The next image is for the new cases in Spain related to Facial coverings policies.
 
 ![new cases in Spain related to Facial coverings policies](Images/SpainNewCasesSchoolClosing.png)
 
-In this case, 0 is for no measures, 1 recommended, 2 required in some specific public spaces, 3 required in all public spaces, 4 required outside the home.
-It is interesting to see that there is a lot of new cases even with the type 4 of policy. This is because in Spain, facial masks were mandatory since May, so even with the new waves, facial mask policies were the same. 
-This image is an example when having more information about the topic or the situation can improve understanding the data. 
+In this case: 0 is for no measures, 1 recommended, 2 required in some specific public spaces, 3 required in all public spaces, 4 required outside the home.
+It is interesting to see that there is a lot of new cases even with the type 4 of policy. This is because in Spain, facial masks were mandatory since May, so even with the new waves facial mask policies were the same. 
+This image exemplifies how having more knowledge about the situation can improve understanding of the data. 
 
-Now, let's see the prediction plot for Spain.
+Now, we see the prediction plot for Spain.
 
 ![prediction plot for Spain](Images/SpainPrediction.png)
 
-I performed the model for all the countries to predict the number of Confirmed Cases. Then, I plot the result only for Spain.
-The results are not good, and improving this model is possible. It didn't even have a the same tendency for the predicitons. 
-I also anted to see if the result will improve if I trained the model only with Spain data.
+I ran the model to predict the number of Confirmed Cases in every country. Then, I plotted the results for Spain.
+The predictions are not accurate, and improving this model is possible. It did not even have the same tendency for the predicitons. 
+I also wanted to test if the results would improve by training the model only with data from Spain.
 
 ![prediction plot only for Spain](Images/OnlySpainPrediction.png)
 
-In this case, the prediction improved a little bit, but it is still not good.
+The prediction improved a little bit, but it is still far from being good.
 
-However, the model performs better if we predict the New Cases. In this cases I trained the model only with Spain data and tried to predict New Cases.
+However, the model performs better if we predict the New Cases. Here, I trained the model only with Spain data and tried to predict New Cases.
 
 ![NewCases prediction for Spain](Images/predictedNewCasesSpain.png)
