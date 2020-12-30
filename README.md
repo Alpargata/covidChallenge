@@ -23,19 +23,19 @@ First I did it with France, and then with the other countries. As it was expecte
 I created new features that were the lineal combination of the categorical variables and their flag variable. For example, the variable C1_School_closing and the varibale C1_Flag. The first one is a categorical variable from 0 to 4 and the second one indicates if the measure was taken in the whole country or just in some areas. With this, I tried to give a weight depending on the flag. 
 
 ## Model
-I decided to perform an Ada Boost Regressor with the Scikit-learn implementation. I decided to implement this technique because it is good with noisy data and it could work well with our dataset. 
-I performed a simple AdaBoostRegressor with the hyperparameters: *DecisionTreeRegressor(max_depth=6), n_estimators=500*.
+I performed an Ada Boost Regressor with the Scikit-learn implementation. I decided to implement this algorithm because it is good with noisy data and it could work well with our dataset. 
+I trained a simple AdaBoostRegressor with the hyperparameters: *DecisionTreeRegressor(max_depth=6), n_estimators=500*.
 As it is a timeseries problem, it is not interesting to choose randomly, as it is important to take into account the time. 
 The model is trained by the following features: *'C1_School_closing', 'C1_Flag', 'C2_Workplace_closing', 'C2_Flag', 'C3_Cancel_public_events', 'C3_Flag', 'C4_Restrictions_on_gatherings', 'C4_Flag', 'C5_Close_public_transport', 'C5_Flag', 'C6_Stay_at_home_requirements', 'C6_Flag', 'C7_Restrictions_on_internal_movement', 'C7_Flag', 'C8_International_travel_controls', 'E1_Income_support', 'E1_Flag', 'E2_Debt_contract_relief', 'E3_Fiscal_measures', 'E4_International_support', 'H1_Public_information_campaigns', 'H1_Flag', 'H2_Testing_policy', 'H3_Contact_tracing', 'H4_Emergency_investment_in_healthcare', 'H5_Investment_in_vaccines', 'H6_Facial_Coverings', 'H6_Flag', 'H7_Vaccination_policy', 'H7_Flag', 'Month', 'Year', 'Day'*. 
-The model is trianed with the data until 30 of September, and then it predicts for October, November and December. 
-I tried to do the model with the weights for the flags and categorical variables, but the results are worse than before. 
+The model is trained with the data until 30 of September, and then it predicts for October, November and December. 
+I tried to do the model with the weights for the flags and categorical variables, but the results were worse. 
 
 ## Learnings
-For me this was the fisrt time I participated in a Challenge. It has been interesting and different to work in it, but I enojoyed it. I have learned how to work with a big group of people in the same project and how AdaBoost works. 
+For me, this has been my fisrt participation in a challenge. It has been interesting and different to work in it, but I enojoyed it. I have learned how to work with a big group of people in the same project and how AdaBoost works. 
 
 ## Future work
 I would like to perform this same model with more variables and see if the results are different. 
-I think using a Neural Network could be also interesting, eventhough it may not work really well.
+I think using a Neural Network could be also interesting, even though it may not work really well.
 
 ## Graphs
 
