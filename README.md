@@ -39,24 +39,33 @@ I think using a Neural Network could be also interesting, even though it may not
 
 ## Graphs
 In the next image, we can observe the distribution of New cases depending on the type of School Closing policy that was applied in Spain.
+
 ![School Closing policy that was applied in Spain](Images/SpainNewCasesSchoolClosing.png)
+
 The policies were 0 for no measures, 1 for recommend closing, 2 for required closing in some levels and 3 for closing in all levels. 
 In the image, we can see that with no measures there were little cases taking place, this is because no measures was taken during the beggining of the year, when covid was not in Spain or there were not a lot of cases. 
 Then we can see that when closing schools, the number of new cases was reduced. 
 
 The next image is for the new cases in Spain related to Facial coverings policies.
+
 ![new cases in Spain related to Facial coverings policies](Images/SpainNewCasesSchoolClosing.png)
+
 In this case, 0 is for no measures, 1 recommended, 2 required in some specific public spaces, 3 required in all public spaces, 4 required outside the home.
 It is interesting to see that there is a lot of new cases even with the type 4 of policy. This is because in Spain, facial masks were mandatory since May, so even with the new waves, facial mask policies were the same. 
 This image is an example when having more information about the topic or the situation can improve understanding the data. 
 
 Now, let's see the prediction plot for Spain.
+
 ![prediction plot for Spain](Images/SpainPrediction.png)
+
 I performed the model for all the countries to predict the number of Confirmed Cases. Then, I plot the result only for Spain.
 The results are not good, and improving this model is possible. It didn't even have a the same tendency for the predicitons. 
 I also anted to see if the result will improve if I trained the model only with Spain data.
+
 ![prediction plot only for Spain](Images/OnlySpainPrediction.png)
+
 In this case, the prediction improved a little bit, but it is still not good.
 
 However, the model performs better if we predict the New Cases. In this cases I trained the model only with Spain data and tried to predict New Cases.
+
 ![NewCases prediction for Spain](Images/predictedNewCasesSpain.png)
